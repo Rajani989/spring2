@@ -1,0 +1,39 @@
+body{
+    /* justify-content: center;
+	align-items: center; */
+    height: 90vh;
+    background: linear-gradient(to bottom right, #fcfdff, #adc7ec);
+    
+}
+small{
+    float: right;
+}
+.CartContainer{
+    margin-left: 300px;
+    padding: 50px;
+    justify-content: center;
+	align-items: center;
+    width: 50%;
+	height: 90vh;
+	background: linear-gradient(to bottom right, #f3f4f5, #adc7ec);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #1687d933;
+}
+form{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 80%;
+    margin-left: 25px;
+}
+input{
+    width: 80%;
+}
+.form-group{
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+button{
+    margin-left: 30px;
+    width: 100px;
+}

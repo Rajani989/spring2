@@ -1,0 +1,48 @@
+<body >
+
+    <div class="CartContainer text-center">
+      <div class="popular">
+      <h4>
+      <!-- <img src="./assets/popular.jpg">   -->
+       Popular today </h4>
+       </div>
+        
+        <!-- <h3 class="Heading"></h3> -->
+   	   	<!-- <h5 class="Action"></h5> -->
+
+          
+        <ng-container *ngFor="let item of proDetails">
+
+          <div class="card col-md-3 ">
+           <div class="text-center">
+           
+            <img src="{{item.imgadd}}" >
+         
+           </div>
+           <div class="title ">
+            {{item.name}}
+           </div>
+            <div class="price" id="price">
+             <!-- <button class="btn btn-default"> Rs. 100</button>-->
+            Rs. {{item.price}}
+             
+              <!-- <div class="but">Qty: 
+                
+                <button class="btn btn-default" >{{qty}}</button>
+               
+                
+              </div>-->
+            </div>
+            <button class="btn btn-outline-danger" (click)="atc(item)" >Add</button>
+          </div>
+        </ng-container>
+        <hr style="color: black;">
+
+<!-- <div class="card col-md 8">
+  <button >Total</button>
+  <input type="number">
+  <button class="btn btn-danger" style="float: right;">Buy</button>
+</div> -->
+       
+   	   </div>  
+        </body>

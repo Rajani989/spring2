@@ -1,0 +1,38 @@
+body{
+    /* justify-content: center;
+	align-items: center; */
+    height: 120vh;
+    /* background: linear-gradient(to bottom right, #ece9ee, #e4f581); */
+    /* margin-top: 60px; */
+}
+.CartContainer{
+    margin-left: 300px;
+    padding: 50px;
+    justify-content: center;
+	align-items: center;
+    width: 60%;
+	height: 120vh;
+	background: linear-gradient(to bottom right, #ece9ee, #bd81f5);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #0e324dd7;
+    
+}
+input{
+    width: 80%;
+}
+.form-group{
+    padding: 5px;
+    /* margin-top: 10px; */
+    margin-left: 100px;
+}
+button{
+    width: 80%;
+    margin-left: 60px;
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}

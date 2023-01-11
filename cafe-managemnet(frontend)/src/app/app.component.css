@@ -1,0 +1,25 @@
+li{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+}
+.container{
+    width: 100% ;
+    background-color: yellow;
+}
+ul{
+    width: 100% ;
+    /* background-color: lightgreen; */
+    /* border: 1px solid black; */
+    
+}
+.right{
+    float: right;
+    margin-right: 30px;
+    font-size: 18px;
+}
+button{
+    background-color: white;
+    height: 45px;
+    width: 80px;
+}

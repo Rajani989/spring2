@@ -1,0 +1,46 @@
+<body >
+
+    <div class="CartContainer">
+        <h1>Registration Form  <i class="bi bi-person-plus-fill"></i></h1>
+        <h5 class="text-success"><b>{{success}}</b></h5>
+        <h5 class="text-danger"><b>{{error}}</b></h5>
+        <h5 class="text-danger"><b>{{error1}}</b></h5>
+        <hr/>
+        <!-- <h5 class="text-danger"><b>{{error}}</b></h5>
+        <h5 class="text-danger"><b>{{error1}}</b></h5> -->
+        <form  #register="ngForm" (ngSubmit)="userRegister()">
+            <div class="form-group">
+            <label class="form-label"><b>User Name:</b> </label>
+            <input type="text" class="form-control" placeholder="enter your name" name="name" id="name" [(ngModel)]="user.name" required #name="ngModel"
+            [class.is-invalid]="name.invalid && name.touched">
+        </div>
+        
+           <div class="form-group">
+            <label class="form-label"><b>Email:</b> </label>
+            <input type="email" class="form-control" placeholder="enter your email id" name="email" id="email" [(ngModel)]="user.email" required #email="ngModel"
+            [class.is-invalid]="email.invalid && email.touched">
+           </div>
+           <div class="form-group">
+            <label class="form-label"><b>Address:</b> </label>
+            <input type="address" class="form-control" placeholder="enter your address" name="address" id="address" [(ngModel)]="user.address" required #address="ngModel"
+            [class.is-invalid]="address.invalid && address.touched">
+           </div>
+           <div class="form-group">
+            <label class="form-label"><b>Phone Number:</b> </label>
+            <input type="phone" class="form-control" placeholder="enter your phone" name="phone" id="phone" [(ngModel)]="user.phone" required #phone="ngModel"
+            [class.is-invalid]="phone.invalid && phone.touched">
+           </div>
+           <div class="form-group">
+            <label class="form-label"><b>Password:</b> </label>
+            <input type="password" class="form-control" placeholder="enter your password" name="password" id="password" [(ngModel)]="user.password" required #password="ngModel"
+            [class.is-invalid]="password.invalid && password.touched">
+           </div>
+           <div>
+            <br>
+            <button type="submit" class="btn btn-success">Register</button>
+           </div>
+          
+        </form>
+       
+    </div>
+</body>
